@@ -1,2 +1,2 @@
 # Portfolio-Backend
-Basic Backend for my portfolio
+Basic Backend in expressjs for my portfolio hosted on Heroku
