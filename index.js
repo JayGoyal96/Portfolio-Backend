@@ -3,7 +3,7 @@ const app = express()
 app.use(express.urlencoded({ extended: true }));
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://<usernam>:<passwor>@cluster0.2fhpk.mongodb.net/<database>?retryWrites=true&w=majority');
+mongoose.connect(process.env.URL);
 
 const schema = new mongoose.Schema({ fname: String,lname: String,email: String, number: String, subject: String });
 const Form = mongoose.model('Form', schema);
